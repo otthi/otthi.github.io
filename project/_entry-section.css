@@ -1,0 +1,98 @@
+.p-entry-section {
+  margin: 4rem 0 -1.2rem;
+  line-height: 2;
+  font-size: 1.4rem;
+}
+
+.p-entry-section h2,
+.p-entry-section h3,
+.p-entry-section h4,
+.p-entry-section h5,
+.p-entry-section h6 {
+  margin: 2.8rem 0 1.2rem;
+}
+
+.p-entry-section h2 {
+  font-size: 2.4rem;
+}
+
+.p-entry-section h3 {
+  font-size: 2.2rem;
+}
+
+.p-entry-section h4 {
+  font-size: 2rem;
+}
+
+.p-entry-section h5 {
+  font-size: 1.8rem;
+}
+
+.p-entry-section h6 {
+  font-size: 1.6rem;
+  font-weight: bold;
+}
+
+.p-entry-section p {
+  margin: 1.2rem 0;
+}
+
+.p-entry-section ul {
+  margin: 1.2rem 0;
+  padding-left: 1.5em;
+}
+
+.p-entry-section ol {
+  margin: 1.2rem 0;
+  padding-left: 1.5em;
+}
+
+.p-entry-section li {
+  margin: .5rem 0;
+  line-height: 1.8;
+}
+
+.p-entry-section em {
+  margin: 0 .1em;
+  font-weight: bold;
+  font-style: normal;
+}
+
+.p-entry-section strong {
+  margin: 0 .1em;
+  background: linear-gradient(transparent 55%, var(--color-yellow) 0%);
+  font-weight: normal;
+}
+
+.p-entry-section a {
+  margin: 0 .1em;
+}
+
+.p-entry-section img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+  margin: 1.2rem auto;
+}
+
+.p-entry-section code {
+  font-family: var(--ff-code);
+}
+
+.p-entry-section code:not([class]) {
+  margin: 0 .3em;
+  background-color: #f8f8f8;
+  color: #b44;
+  padding: .2em .3em .2em .45em;
+  letter-spacing: .1em;
+  border-radius: 2px;
+}
+
+.p-entry-section pre {
+  margin: 2rem 0 1.2rem;
+  line-height: 1.5;
+  padding: .7rem 0;
+  border-radius: 4px;
+  overflow: auto;
+  font-size: 1.3rem;
+}

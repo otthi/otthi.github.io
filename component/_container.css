@@ -1,0 +1,8 @@
+.c-container {
+  @apply --position-container;
+  max-width: 640px;
+}
+
+.c-container.c-container--wide {
+  max-width: 800px;
+}

@@ -1,0 +1,40 @@
+* {
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+  color: var(--font-color-default);
+  font-family: var(--ff-default);
+  letter-spacing: .1em;
+  font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+body {
+  font-size: 1.4rem;
+  background-color: var(--color-body-bg);
+}
+
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: normal;
+}
+
+a {
+  transition: .2s;
+  color: currentColor;
+}
+
+a:not([class]) {
+  color: var(--font-color-link);
+}

@@ -1,0 +1,24 @@
+.p-my-accounts {
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: center;
+  justify-content: center;
+  list-style: none;
+  padding: 0;
+  margin: 4rem 0 3rem;
+}
+
+.p-my-accounts__item {
+  margin: 0 .5em;
+}
+
+.p-my-accounts__icon {
+  width: 24px;
+  height: 24px;
+  fill: #777;
+  transition: .2s;
+}
+
+.p-my-accounts__icon:hover {
+  fill: var(--font-color-link);
+}

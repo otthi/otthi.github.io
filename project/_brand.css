@@ -1,0 +1,23 @@
+.p-brand {
+  margin: 5rem 0 4rem;
+}
+
+.p-brand__name {
+  font-family: var(--ff-brand);
+  font-size: 4rem;
+  text-align: center;
+}
+
+.p-brand__name a {
+  text-decoration: none;
+}
+
+.p-brand__name a:hover {
+  color: var(--font-color-link);
+}
+
+.p-brand__description {
+  text-align: center;
+  margin: 0;
+  font-size: 1.2rem;
+}

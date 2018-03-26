@@ -1,0 +1,4 @@
+.c-section {
+  @apply --position-container;
+  max-width: 640px;
+}
