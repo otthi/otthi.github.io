@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+
+  <html lang="ja">
+
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+<title>
+  
+    2.1 基本的な文法 「セミコロン」 | No dog, No life.
+  
+</title>
+<link rel="stylesheet" href="https://otthi.github.io/app.css">
+<link rel="stylesheet" href="https://otthi.github.io/chroma-styles.css">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/yakuhanjp@3.0.0/dist/css/yakuhanjp_s.min.css">
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TXT52W');</script>
+
+
+</head>
+<body>
+  
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TXT52W"
+  height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+  
+  <div id="app">
+  </div>
+
+  <header class="l-header">
+  <div class="p-brand">
+    <div class="p-brand__name">
+      
+        <a href="https://otthi.github.io" class="p-brand__link">
+          No dog, No life.
+        </a>
+      
+    </div>
+    <p class="p-brand__description">
+      WEBデザイナーとしての個人的な記録と犬のこと
+    </p>
+  </div>
+</header>
+
+  
+  <main role="main" class="l-main">
+    <article class="c-container c-container--wide">
+      <section class="c-card">
+        <header class="c-card__header">
+          
+          <h1 class="c-card__title c-card__title--single">
+            2.1 基本的な文法 「セミコロン」
+            
+          </h1>
+        </header>
+
+        <section class="p-entry-section">
+          
+
+<p><em>「ノンプログラマのためのJavaScript」 第2章 JavaScriptの文法 より</em></p>
+
+<h2 id="セミコロンについて">セミコロンについて</h2>
+
+<ul>
+<li><code>;</code> は文章の終わりを明示する</li>
+<li>改行をする場合に限り、文末の <code>;</code> を省略できる</li>
+</ul>
+
+<h3 id="気になった点">気になった点</h3>
+
+<blockquote>
+<p>しかし、セミコロンを省略すると意図しない動作になることがあるので、必ずセミコロンを付けましょう。<br>
+P.20より引用</p>
+</blockquote>
+
+<p>「意図しない動作」とは…？<br>
+改行とセミコロンの省略の関係を軽く調べてみた。</p>
+
+<p>JavaScriptは、セミコロンを省略しても <em>特定の条件で自動でセミコロンを挿入</em> して解釈してくれる仕様になっている。<br>
+この「特定の条件」に当てはまらない場合に「意図しない動作になる」らしい。</p>
+
+<p>例えば、、、</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span>
+<span class="p">})();</span> <span class="err">//-&gt; 1</span></code></pre></div>
+
+<p>このコードからセミコロンを省略すると</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span>
+<span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">)</span>
+<span class="p">})()</span> <span class="c1">//-&gt; Uncaught TypeError: 1 is not a function
+</span><span class="c1"></span>
+<span class="c1">// このように認識されている
+</span><span class="c1"></span><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span> <span class="p">(</span><span class="kd">function</span><span class="p">()</span> <span class="p">{</span>
+  <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">);</span>
+<span class="p">})();</span></code></pre></div>
+
+<p>今の知識力では、「特定の条件」を全て理解するのは難しいけれど、「必ずセミコロンを付けましょう」の理由を理解することはできた。</p>
+
+<hr />
+
+<h6 id="参考サイト">参考サイト</h6>
+
+<ul>
+<li><a href="https://qiita.com/IganinTea/items/ac48b7e12890351ee55a" target="_blank">JavaScriptのセミコロンを省くと起こること</a></li>
+<li><a href="https://blog.tai2.net/automatic_semilocon_insertion.html" target="_blank">JavaScriptの行末セミコロンは省略すべきか | blog.tai2.net</a></li>
+</ul>
+
+        </section>
+
+        <footer class="c-card__footer">
+          <time class="c-card__timestamp">
+            Aug 14, 2018
+          </time>
+
+          
+            <ul class="c-card__tags">
+              
+                <li>
+                  <a href="https://otthi.github.io/tags/javascript">
+                    #JavaScript
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="https://otthi.github.io/tags/%E8%AA%AD%E6%9B%B8">
+                    #読書
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </footer>
+
+      </section>
+    </article>
+  </main>
+
+  <footer class="l-footer">
+  <p class="p-copyright">
+    &copy; 2018 otthi
+  </p>
+</footer>
+
+  <script src="https://otthi.github.io/bundle.js"></script>
+
+  <svg xmlns="http://www.w3.org/2000/svg" style="display:none"><symbol id="github" viewBox="0 0 1792 1792"><path d="M896 128q209 0 385.5 103T1561 510.5 1664 896q0 251-146.5 451.5T1139 1625q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142 57-6 102.5-18t94-39 81-66.5 53-105T1386 856q0-119-79-206 37-91-8-204-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27T578 459.5 493 446q-45 113-8 204-79 87-79 206 0 85 20.5 150t52.5 105 80.5 67 94 39 102.5 18q-39 36-49 103-21 10-45 15t-57 5-65.5-21.5T484 1274q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5 9 14 13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30 69.5 7 55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5T128 896q0-209 103-385.5T510.5 231 896 128zM419 1231q3-7-7-12-10-3-13 2-3 7 7 12 9 6 13-2zm31 34q7-5-2-16-10-9-16-3-7 5 2 16 10 10 16 3zm30 45q9-7 0-19-8-13-17-6-9 5 0 18t17 7zm42 42q8-8-4-19-12-12-20-3-9 8 4 19 12 12 20 3zm57 25q3-11-13-16-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11-16 0-16 11 0 13 17 11 16 0 16-11zm58-10q-2-11-18-9-16 3-14 15t18 8 14-14z"/></symbol><symbol id="instagram" viewBox="0 0 1792 1792"><path d="M1152 896q0-106-75-181t-181-75-181 75-75 181 75 181 181 75 181-75 75-181zm138 0q0 164-115 279t-279 115-279-115-115-279 115-279 279-115 279 115 115 279zm108-410q0 38-27 65t-65 27-65-27-27-65 27-65 65-27 65 27 27 65zM896 266q-7 0-76.5-.5t-105.5 0-96.5 3-103 10T443 297q-50 20-88 58t-58 88q-11 29-18.5 71.5t-10 103-3 96.5 0 105.5.5 76.5-.5 76.5 0 105.5 3 96.5 10 103T297 1349q20 50 58 88t88 58q29 11 71.5 18.5t103 10 96.5 3 105.5 0 76.5-.5 76.5.5 105.5 0 96.5-3 103-10 71.5-18.5q50-20 88-58t58-88q11-29 18.5-71.5t10-103 3-96.5 0-105.5-.5-76.5.5-76.5 0-105.5-3-96.5-10-103T1495 443q-20-50-58-88t-88-58q-29-11-71.5-18.5t-103-10-96.5-3-105.5 0-76.5.5zm768 630q0 229-5 317-10 208-124 322t-322 124q-88 5-317 5t-317-5q-208-10-322-124t-124-322q-5-88-5-317t5-317q10-208 124-322t322-124q88-5 317-5t317 5q208 10 322 124t124 322q5 88 5 317z"/></symbol></svg>
+
+</body>
+</html>

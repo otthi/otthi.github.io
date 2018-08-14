@@ -6,10 +6,19 @@
     <description>Recent content on No dog, No life.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 05 Aug 2018 14:17:47 +0900</lastBuildDate>
+    <lastBuildDate>Tue, 14 Aug 2018 08:19:30 +0900</lastBuildDate>
     
 	<atom:link href="https://otthi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>2.1 基本的な文法 「セミコロン」</title>
+      <link>https://otthi.github.io/2018/08/14/learn-javascript-01/</link>
+      <pubDate>Tue, 14 Aug 2018 08:19:30 +0900</pubDate>
+      
+      <guid>https://otthi.github.io/2018/08/14/learn-javascript-01/</guid>
+      <description>「ノンプログラマのためのJavaScript」 第2章 JavaScriptの文法 より セミコロンについて ; は文章の終わりを明示する 改行をする場合</description>
+    </item>
     
     <item>
       <title>「ノンプログラマのためのJavaScriptはじめの一歩 (WEB&#43;DB PRESS plus) 」を読んで、個人的なメモを残していきます</title>
