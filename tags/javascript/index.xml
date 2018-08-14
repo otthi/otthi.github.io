@@ -12,12 +12,12 @@
     
     
     <item>
-      <title>2.1 基本的な文法 「セミコロン」</title>
+      <title>JavaScript「セミコロン」について</title>
       <link>https://otthi.github.io/2018/08/14/learn-javascript-01/</link>
       <pubDate>Tue, 14 Aug 2018 08:19:30 +0900</pubDate>
       
       <guid>https://otthi.github.io/2018/08/14/learn-javascript-01/</guid>
-      <description>「ノンプログラマのためのJavaScript」 第2章 JavaScriptの文法 より セミコロンについて ; は文章の終わりを明示する 改行をする場合</description>
+      <description>「ノンプログラマのためのJavaScript」 第2章 JavaScriptの文法 より ; は文章の終わりを明示する 改行をする場合に限り、文末の ; を</description>
     </item>
     
     <item>
