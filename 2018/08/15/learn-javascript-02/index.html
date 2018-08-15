@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 <title>
   
-    読書 | No dog, No life.
+    JavaScriptの「変数」 | No dog, No life.
   
 </title>
 <link rel="stylesheet" href="https://otthi.github.io/app.css">
@@ -48,125 +48,85 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
   
   <main role="main" class="l-main">
+    <article class="c-container c-container--wide">
+      <section class="c-card">
+        <header class="c-card__header">
+          
+          <h1 class="c-card__title c-card__title--single">
+            JavaScriptの「変数」
+            
+          </h1>
+        </header>
 
-    
-    <section class="c-container">
+        <section class="p-entry-section">
+          
 
-      <header class="c-heading">
-        <h1 class="c-heading__title-name">読書</h1>
-      </header>
+<p><em>「ノンプログラマのためのJavaScript」 第2章 JavaScriptの文法 より</em></p>
 
-      <div class="c-summary-card-wrapper">
-        
-          <article class="c-card">
-  <header class="c-card__header">
-    
-    <h2 class="c-card__title">
-      <a href="https://otthi.github.io/2018/08/15/learn-javascript-02/" class="c-card__link">
-        JavaScriptの「変数」
-        
-      </a>
-    </h2>
-  </header>
-  <footer class="c-card__footer">
-    <time class="c-card__timestamp">
-      Aug 15, 2018
-    </time>
-    
-      <ul class="c-card__tags">
-        
-          <li>
-            <a href="https://otthi.github.io/tags/javascript">
-              #JavaScript
-            </a>
-          </li>
-        
-          <li>
-            <a href="https://otthi.github.io/tags/%E8%AA%AD%E6%9B%B8">
-              #読書
-            </a>
-          </li>
-        
-      </ul>
-    
-  </footer>
-</article>
+<ul>
+<li>変数とは、データを保存しておく箱</li>
+<li>どんなデータでも入れることができる</li>
+</ul>
 
-        
-          <article class="c-card">
-  <header class="c-card__header">
-    
-    <h2 class="c-card__title">
-      <a href="https://otthi.github.io/2018/08/14/learn-javascript-01/" class="c-card__link">
-        JavaScriptの「セミコロン」について
-        
-      </a>
-    </h2>
-  </header>
-  <footer class="c-card__footer">
-    <time class="c-card__timestamp">
-      Aug 14, 2018
-    </time>
-    
-      <ul class="c-card__tags">
-        
-          <li>
-            <a href="https://otthi.github.io/tags/javascript">
-              #JavaScript
-            </a>
-          </li>
-        
-          <li>
-            <a href="https://otthi.github.io/tags/%E8%AA%AD%E6%9B%B8">
-              #読書
-            </a>
-          </li>
-        
-      </ul>
-    
-  </footer>
-</article>
+<h3 id="試してみたこと">試してみたこと</h3>
 
-        
-          <article class="c-card">
-  <header class="c-card__header">
-    
-    <h2 class="c-card__title">
-      <a href="https://otthi.github.io/2018/08/05/learn-javascript-00/" class="c-card__link">
-        「ノンプログラマのためのJavaScriptはじめの一歩 (WEB&#43;DB PRESS plus) 」を読んで、個人的なメモを残していきます
-        
-      </a>
-    </h2>
-  </header>
-  <footer class="c-card__footer">
-    <time class="c-card__timestamp">
-      Aug 5, 2018
-    </time>
-    
-      <ul class="c-card__tags">
-        
-          <li>
-            <a href="https://otthi.github.io/tags/javascript">
-              #JavaScript
-            </a>
-          </li>
-        
-          <li>
-            <a href="https://otthi.github.io/tags/%E8%AA%AD%E6%9B%B8">
-              #読書
-            </a>
-          </li>
-        
-      </ul>
-    
-  </footer>
-</article>
+<blockquote>
+<p>変数にはどんなデータでも入れることができます。<br>
+P.24より</p>
+</blockquote>
 
-        
-      </div>
+<p>入れる値によってどんなデータ型が返ってくるか、<code>typeof</code> を使って確認してみる。</p>
 
-    </section>
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">a</span><span class="p">;</span>
+<span class="k">typeof</span> <span class="nx">a</span> <span class="c1">//-&gt; &#34;undefined&#34;
+</span><span class="c1"></span><span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="k">typeof</span> <span class="nx">a</span> <span class="c1">//-&gt; &#34;number&#34;
+</span><span class="c1"></span><span class="nx">a</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span><span class="p">;</span>
+<span class="k">typeof</span> <span class="nx">a</span> <span class="c1">//-&gt; &#34;string&#34;
+</span><span class="c1"></span><span class="nx">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
+<span class="k">typeof</span> <span class="nx">a</span> <span class="c1">//-&gt; &#34;object&#34;
+</span><span class="c1"></span><span class="nx">a</span> <span class="o">=</span> <span class="p">{</span><span class="nx">b</span><span class="o">:</span> <span class="mi">1</span><span class="p">}</span>
+<span class="k">typeof</span> <span class="nx">a</span> <span class="err">//-&gt; &#34;object&#34;</span></code></pre></div>
 
+<p>配列もオブジェクトも <code>object</code> らしい。<br>
+データの種類については、本を読み進めていく方が理解できそうだったので、今はこれを疑問に持ちながら先に進んでいこうと思う。</p>
+
+<hr />
+
+<h6 id="参考サイト">参考サイト</h6>
+
+<ul>
+<li><a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/typeof" target="_blank">typeof 演算子 - JavaScript | MDN</a></li>
+</ul>
+
+        </section>
+
+        <footer class="c-card__footer">
+          <time class="c-card__timestamp">
+            Aug 15, 2018
+          </time>
+
+          
+            <ul class="c-card__tags">
+              
+                <li>
+                  <a href="https://otthi.github.io/tags/javascript">
+                    #JavaScript
+                  </a>
+                </li>
+              
+                <li>
+                  <a href="https://otthi.github.io/tags/%E8%AA%AD%E6%9B%B8">
+                    #読書
+                  </a>
+                </li>
+              
+            </ul>
+          
+        </footer>
+
+      </section>
+    </article>
   </main>
 
   <footer class="l-footer">
