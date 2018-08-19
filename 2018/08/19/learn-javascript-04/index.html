@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
 <title>
   
-    JavaScriptの「変数」について学ぶ | No dog, No life.
+    JavaScriptの「配列」と「オブジェクト」について学ぶ 定義と特徴編 | No dog, No life.
   
 </title>
 <link rel="stylesheet" href="https://otthi.github.io/app.css">
@@ -53,7 +53,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <header class="c-card__header">
           
           <h1 class="c-card__title c-card__title--single">
-            JavaScriptの「変数」について学ぶ
+            JavaScriptの「配列」と「オブジェクト」について学ぶ 定義と特徴編
             
           </h1>
         </header>
@@ -61,49 +61,75 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
         <section class="p-entry-section">
           
 
+<p>今回は「配列」と「オブジェクト」の共通している部分と異なる部分を意識するため、いくつかのトピックごとに分けてまとめてみる。</p>
+
 <p><em>「ノンプログラマのためのJavaScript」 第2章 JavaScriptの文法 より</em></p>
 
-<ul>
-<li>変数とは、データを保存しておく箱</li>
-<li>どんなデータでも入れることができる</li>
-</ul>
+<h2 id="データ型-配列-と-オブジェクト-の定義と特徴">データ型「配列」と「オブジェクト」の定義と特徴</h2>
 
-<h3 id="試してみたこと">試してみたこと</h3>
-
-<blockquote>
-<p>変数にはどんなデータでも入れることができます。<br>
-P.24より</p>
-</blockquote>
-
-<p>入れる値によってどんなデータ型が返ってくるか、<code>typeof</code> を使って確認してみる。</p>
-
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">a</span><span class="p">;</span>
-<span class="k">typeof</span> <span class="nx">a</span> <span class="c1">//-&gt; &#34;undefined&#34;
-</span><span class="c1"></span><span class="nx">a</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
-<span class="k">typeof</span> <span class="nx">a</span> <span class="c1">//-&gt; &#34;number&#34;
-</span><span class="c1"></span><span class="nx">a</span> <span class="o">=</span> <span class="s1">&#39;1&#39;</span><span class="p">;</span>
-<span class="k">typeof</span> <span class="nx">a</span> <span class="c1">//-&gt; &#34;string&#34;
-</span><span class="c1"></span><span class="nx">a</span> <span class="o">=</span> <span class="p">[</span><span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">];</span>
-<span class="k">typeof</span> <span class="nx">a</span> <span class="c1">//-&gt; &#34;object&#34;
-</span><span class="c1"></span><span class="nx">a</span> <span class="o">=</span> <span class="p">{</span><span class="nx">b</span><span class="o">:</span> <span class="mi">1</span><span class="p">}</span>
-<span class="k">typeof</span> <span class="nx">a</span> <span class="err">//-&gt; &#34;object&#34;</span></code></pre></div>
-
-<p>配列もオブジェクトも <code>object</code> らしい。<br>
-データの種類については、本を読み進めていく方が理解できそうだったので、今はこれを疑問に持ちながら先に進んでいこうと思う。</p>
-
-<hr />
-
-<h6 id="参考サイト">参考サイト</h6>
+<p>どちらも以下の点で共通している。</p>
 
 <ul>
-<li><a href="https://developer.mozilla.org/ja/docs/Web/JavaScript/Reference/Operators/typeof" target="_blank">typeof 演算子 - JavaScript | MDN</a></li>
+<li>複数のデータを <code>,</code> で区切り、1つにまとめることができる</li>
+<li>「値」には、変数同様に色んなデータ型を入れることができる</li>
 </ul>
+
+<h3 id="配列">配列</h3>
+
+<ul>
+<li><code>[ ... ]</code> で囲われている部分</li>
+<li><code>,</code> で区切られたそれぞれの値を <em>要素</em> と言う</li>
+</ul>
+
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="s1">&#39;値A&#39;</span><span class="p">,</span> <span class="c1">// &lt;- 要素
+</span><span class="c1"></span>  <span class="s1">&#39;値B&#39;</span>
+<span class="p">];</span></code></pre></div>
+
+<h3 id="オブジェクト">オブジェクト</h3>
+
+<ul>
+<li><code>{ ... }</code> で囲われている部分</li>
+<li><em><code>プロパティ名: 値</code> のペアで記述する</em></li>
+<li><code>,</code> で区切られたそれぞれのペアを <em>プロパティ</em> と言う</li>
+</ul>
+
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">foo</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s1">&#39;プロパティ名1&#39;</span><span class="o">:</span> <span class="s1">&#39;値A&#39;</span><span class="p">,</span> <span class="c1">// &lt;- プロパティ
+</span><span class="c1"></span>  <span class="s1">&#39;プロパティ名2&#39;</span><span class="o">:</span> <span class="s1">&#39;値B&#39;</span>
+<span class="p">};</span></code></pre></div>
+
+<h2 id="まとめ">まとめ</h2>
+
+<p>配列とオプジェクトの大きく異なるポイントは <em><code>プロパティ名: 値</code> のペアで記述する</em> の有無だと思った。
+実際の用途ケースがどう違ってくるのか、 <code>dog</code> という変数名があったとして〜というケースで少しイメージしてみた。</p>
+
+<h3 id="配列を使うなら">配列を使うなら</h3>
+
+<p>ある種類において共通した名称の値を入れる時によさそう。</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">dog</span> <span class="o">=</span> <span class="p">[</span>
+  <span class="s1">&#39;Chihuahua&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;Shiba&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;Pug&#39;</span>
+<span class="p">];</span></code></pre></div>
+
+<h3 id="オブジェクトを使うなら">オブジェクトを使うなら</h3>
+
+<p>1つのデータに付随する様々なデータを入れる時によさそう。</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">dog</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s1">&#39;breed&#39;</span><span class="o">:</span> <span class="s1">&#39;Chihuahua&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;name&#39;</span><span class="o">:</span> <span class="s1">&#39;Doc&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;sex&#39;</span><span class="o">:</span> <span class="s1">&#39;Male&#39;</span><span class="p">,</span>
+  <span class="s1">&#39;age&#39;</span><span class="o">:</span> <span class="mi">7</span>
+<span class="p">};</span></code></pre></div>
 
         </section>
 
         <footer class="c-card__footer">
           <time class="c-card__timestamp">
-            Aug 15, 2018
+            Aug 19, 2018
           </time>
 
           
