@@ -121,26 +121,13 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <p>配列もオブジェクトも「値の取得方法」で変更したい値を指定して代入する。</p>
 
-<h2 id="値の追加">値の追加</h2>
-
-<p>この章では配列の更新方法は記載されていなかったので、オブジェクトのみ。</p>
-
-<h3 id="オブジェクト-1">オブジェクト</h3>
-
-<p><div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">dog</span> <span class="o">=</span> <span class="p">{</span>
-  <span class="s1">&#39;name&#39;</span><span class="o">:</span> <span class="s1">&#39;Doc&#39;</span>
-<span class="p">};</span>
-
-<span class="nx">dog</span><span class="p">.</span><span class="nx">coat</span> <span class="o">=</span> <span class="s1">&#39;smooth&#39;</span><span class="p">;</span>
-<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">dog</span><span class="p">);</span> <span class="err">//-&gt; {name: &#34;Doc&#34;, coat: &#34;smooth&#34;}</span></code></pre></div></p>
-
-<h2 id="要素数の取得">要素数の取得</h2>
+<h2 id="配列のみ-要素数の取得">【配列のみ】要素数の取得</h2>
 
 <p>オブジェクトのプロパティ数を取得する方法は記載されていなかった。</p>
 
 <p><code>配列の変数名.length</code> で取得できる。</p>
 
-<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="p">[</span>
+<p><div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">a</span> <span class="o">=</span> <span class="p">[</span>
   <span class="p">[</span>
     <span class="mi">1</span><span class="p">,</span> <span class="mi">2</span><span class="p">,</span> <span class="mi">3</span><span class="p">,</span> <span class="mi">4</span><span class="p">,</span> <span class="mi">5</span>
   <span class="p">],</span>
@@ -150,7 +137,18 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <span class="p">]</span>
 
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">.</span><span class="nx">length</span><span class="p">)</span> <span class="c1">//-&gt; 2
-</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">length</span><span class="p">)</span> <span class="err">//-&gt; 5</span></code></pre></div>
+</span><span class="c1"></span><span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">a</span><span class="p">[</span><span class="mi">0</span><span class="p">].</span><span class="nx">length</span><span class="p">)</span> <span class="err">//-&gt; 5</span></code></pre></div></p>
+
+<h2 id="オブジェクトのみ-プロパティの追加">【オブジェクトのみ】プロパティの追加</h2>
+
+<p>この章では配列の更新方法は記載されていなかったので、オブジェクトのみ。</p>
+
+<div class="highlight"><pre class="chroma"><code class="language-javascript" data-lang="javascript"><span class="kd">var</span> <span class="nx">dog</span> <span class="o">=</span> <span class="p">{</span>
+  <span class="s1">&#39;name&#39;</span><span class="o">:</span> <span class="s1">&#39;Doc&#39;</span>
+<span class="p">};</span>
+
+<span class="nx">dog</span><span class="p">.</span><span class="nx">coat</span> <span class="o">=</span> <span class="s1">&#39;smooth&#39;</span><span class="p">;</span>
+<span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">dog</span><span class="p">);</span> <span class="err">//-&gt; {name: &#34;Doc&#34;, coat: &#34;smooth&#34;}</span></code></pre></div>
 
 <h2 id="まとめ">まとめ</h2>
 
