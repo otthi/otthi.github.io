@@ -67,14 +67,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <h2 id="値の取得">値の取得</h2>
 
-<h4 id="配列">配列</h4>
+<h3 id="配列">配列</h3>
 
 <ul>
-<li><code>変数名[インデックス]</code> で取得できる
-
-<ul>
-<li>配列の入れ子になっている値は <code>[インデックス]</code> をつないで指定する</li>
-</ul></li>
+<li><code>変数名[インデックス]</code> で取得できる</li>
 <li>インデックスとは、要素に対して <code>0</code> から順番に振られた番号みたいなもの</li>
 </ul>
 
@@ -93,7 +89,6 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 
 <ul>
 <li>基本的にはこの記法を使用する</li>
-<li>オブジェクトの入れ子になっている値はプロパティ名を <code>.</code> でつないで指定する</li>
 </ul></li>
 <li>配列のように <code>[]</code> を使って、 <code>変数名['プロパティ名']</code> でも取得できる
 
@@ -117,6 +112,10 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 </span><span class="c1"></span>
 <span class="kd">var</span> <span class="nx">key</span> <span class="o">=</span> <span class="s1">&#39;name&#39;</span><span class="p">;</span>
 <span class="nx">console</span><span class="p">.</span><span class="nx">log</span><span class="p">(</span><span class="nx">dog</span><span class="p">[</span><span class="nx">key</span><span class="p">]);</span> <span class="err">//-&gt; Doc</span></code></pre></div>
+
+<h3 id="入れ子になっているデータの値を取得する場合は">入れ子になっているデータの値を取得する場合は</h3>
+
+<p>どちらも <code>[インデックス]</code> や <code>.プロパティ名</code> をつないで指定することで取得できる。</p>
 
 <h2 id="値の更新">値の更新</h2>
 
