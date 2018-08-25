@@ -6,64 +6,9 @@
     <description>Recent content on No dog, No life.</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>ja</language>
-    <lastBuildDate>Sun, 19 Aug 2018 22:25:31 +0900</lastBuildDate>
     
 	<atom:link href="https://otthi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
-    
-    <item>
-      <title>【JavaScript】「配列」と「オブジェクト」のデータ型について学ぶ - データの操作編</title>
-      <link>https://otthi.github.io/2018/08/19/learn-javascript-05/</link>
-      <pubDate>Sun, 19 Aug 2018 22:25:31 +0900</pubDate>
-      
-      <guid>https://otthi.github.io/2018/08/19/learn-javascript-05/</guid>
-      <description>前回に引き続き、「配列」と「オブジェクト」の違いについてまとめていく。 「ノンプログラマのためのJavaScript」 第2章 JavaScrip</description>
-    </item>
-    
-    <item>
-      <title>【JavaScript】「配列」と「オブジェクト」のデータ型について学ぶ - 定義と特徴編</title>
-      <link>https://otthi.github.io/2018/08/19/learn-javascript-04/</link>
-      <pubDate>Sun, 19 Aug 2018 09:25:33 +0900</pubDate>
-      
-      <guid>https://otthi.github.io/2018/08/19/learn-javascript-04/</guid>
-      <description>今回は「配列」と「オブジェクト」の共通している部分と異なる部分を意識するため、いくつかのトピックごとに分けてまとめてみる。 「ノンプログラマの</description>
-    </item>
-    
-    <item>
-      <title>【JavaScript】「文字列」と「数値」のデータ型と「四則演算」について学ぶ</title>
-      <link>https://otthi.github.io/2018/08/15/learn-javascript-03/</link>
-      <pubDate>Wed, 15 Aug 2018 14:22:41 +0900</pubDate>
-      
-      <guid>https://otthi.github.io/2018/08/15/learn-javascript-03/</guid>
-      <description>今回は個人的にうっかり抜けてしまってた部分や重要だと思ったポイントを、後で思い出しやすくするためにまとめておく。 「ノンプログラマのためのJa</description>
-    </item>
-    
-    <item>
-      <title>【JavaScript】「変数」について学ぶ</title>
-      <link>https://otthi.github.io/2018/08/15/learn-javascript-02/</link>
-      <pubDate>Wed, 15 Aug 2018 12:07:31 +0900</pubDate>
-      
-      <guid>https://otthi.github.io/2018/08/15/learn-javascript-02/</guid>
-      <description>「ノンプログラマのためのJavaScript」 第2章 JavaScriptの文法 より 変数とは、データを保存しておく箱 どんなデータでも入れること</description>
-    </item>
-    
-    <item>
-      <title>【JavaScript】「セミコロン」について学ぶ</title>
-      <link>https://otthi.github.io/2018/08/14/learn-javascript-01/</link>
-      <pubDate>Tue, 14 Aug 2018 08:19:30 +0900</pubDate>
-      
-      <guid>https://otthi.github.io/2018/08/14/learn-javascript-01/</guid>
-      <description>「ノンプログラマのためのJavaScript」 第2章 JavaScriptの文法 より ; は文章の終わりを明示する 改行をする場合に限り、文末の ; を</description>
-    </item>
-    
-    <item>
-      <title>「ノンプログラマのためのJavaScriptはじめの一歩 (WEB&#43;DB PRESS plus) 」を読んで、個人的なメモを残していきます</title>
-      <link>https://otthi.github.io/2018/08/05/learn-javascript-00/</link>
-      <pubDate>Sun, 05 Aug 2018 14:17:47 +0900</pubDate>
-      
-      <guid>https://otthi.github.io/2018/08/05/learn-javascript-00/</guid>
-      <description>本に書かれているコードを色々試し、自分なりに理解したことや残しておきたいと思ったことを記していきます。 この本にしようと思った理由 JavaSc</description>
-    </item>
     
   </channel>
 </rss>
